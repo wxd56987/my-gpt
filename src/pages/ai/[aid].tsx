@@ -1,18 +1,17 @@
 import Base from "@/components/common/base";
 import Header from "@/components/common/header";
 import Footer from "@/components/common/footer";
-import List from "@/components/home-page/list";
-import TagList from "@/components/home-page/tag-list";
+import Generate from "@/components/ai/generate";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter()
+
   return (
     <Base>
-      <Header />
-      <TagList />
-      <List
-        label={'Popular'}
-      />
-      <Footer />
+      <Header/>
+      <Generate/>
+      <Footer/>
     </Base>
   )
 }
