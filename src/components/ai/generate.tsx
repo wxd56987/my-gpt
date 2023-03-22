@@ -19,7 +19,7 @@ const Generate: FC<Props> = ({}) => {
   const getFlow = (question: string) => {
     let t = answer
 
-    const eventSource = new EventSourcePolyfill(`https://www.ludaodao.com/chat/chat?message=${question}&str=bingqilin`, {
+    const eventSource = new EventSourcePolyfill(`https://api.ludaodao.com/chat/chat?message=${question}&str=bingqilin`, {
       headers: {
         'uid': '111'
       }
